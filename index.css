@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Noto Sans", sans-serif; /*для остального*/
+  font-family: "Playfair Display", serif; /*для заголовков*/
+}
+p {
+  font-family: "Noto Sans", sans-serif;
+}
+h {
+  font-family: "Playfair Display", serif;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+/*header start*/
+header {
+  padding: 45px 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 25px;
+}
+
+.header__li_a {
+  font-family: "Noto Sans";
+  color: var(--brown-light, #c3b9b5);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.header__city {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  background-color: transparent;
+  border: none;
+}
+.header__city-p {
+  color: var(--orange, #ffc59e);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+}
+.header__li_a:hover {
+  color: var(--brown, #59443f);
+}
