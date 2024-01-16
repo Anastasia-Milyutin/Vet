@@ -13,3 +13,16 @@ document
     cityImg.style.fill = "#FFC59E";
     cityText.style.color = "#FFC59E";
   });
+
+
+
+
+const buttonHeader = document.querySelector('.header__city')
+const modulWindow = document.querySelector('.city__block')
+const buttonClose = document.querySelector('.city__img')
+buttonHeader.addEventListener('click', () => {
+  modulWindow.style.display = 'block'
+})
+buttonClose.addEventListener('click', () => {
+  modulWindow.style.display = 'none'
+})
