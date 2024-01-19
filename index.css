@@ -345,3 +345,124 @@ header {
   line-height: 30px;
 }
 /*pros end*/
+
+/*footer start*/
+footer {
+  height: 469px;
+  background: var(--brown, #59443f);
+  padding: 50px;
+}
+.footer__text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+.footer__text_flex {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: center;
+  gap: 30px;
+}
+.flex__block {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.footer__text_block {
+  width: 220px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-decoration: none;
+}
+.footer__text_block:hover {
+  color: aqua;
+}
+.footer__link_a:hover {
+  color: aqua;
+}
+.footer__btn_flex {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.footer__btn_search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+.block__link_block {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.footer__link_a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.footer__btn_p {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
+/*footer end*/
+
+/*company start*/
+.company {
+  height: 1080px;
+  background: #fbf8f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.company__h {
+  color: var(--text, #080606);
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+}
+.company__p {
+  width: 479px;
+  color: var(--brown, #59443f);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.company__btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.company__btn:hover .company__btn_p {
+  color: #59443f;
+}
+.company__btn:hover svg path {
+  fill: #59443f;
+  stroke: #59443f;
+}
+.company__btn_p {
+  color: #ffc59e;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+}
+.company__block_img {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+/*company end*/
