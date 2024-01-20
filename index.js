@@ -26,3 +26,22 @@ buttonHeader.addEventListener('click', () => {
 buttonClose.addEventListener('click', () => {
   modulWindow.style.display = 'none'
 })
+
+
+
+const buttons = document.querySelectorAll('.welcome__btn');
+
+// Получаем все секции с классом welcome
+const sections = document.querySelectorAll('.welcome');
+
+buttons.forEach(button => {
+  // При клике на кнопку добавляем ей класс welcome__btn_start
+  button.addEventListener('click', () => {
+    button.classList.add('welcome__btn_start');
+    
+    // Проходим по всем секциям и добавляем им класс welcome_start
+    sections.forEach(section => {
+      section.classList.add('welcome_start');
+    });
+  });
+});
