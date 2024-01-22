@@ -24,9 +24,6 @@ buttonClose.addEventListener("click", () => {
   modulWindow.style.display = "none";
 });
 
-
-
-
 document.querySelector(".welcome_start").style.display = "block";
 
 const btns = document.querySelectorAll(".welcome__btn");
@@ -54,3 +51,23 @@ btns.forEach((btn, index) => {
     });
   });
 });
+
+const menuButton = document.querySelector(".header__menu_btn");
+const menu = document.querySelector(".header__menu");
+
+const handleMenuButtonClick = () => {
+  const isVisible = menu.style.display !== "none";
+
+  if (isVisible) {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "block";
+    menu.style.backgroundColor = "#ffc59e";
+    menu.style.position = "absolute";
+    menu.style.zIndex = "3";
+    menu.style.top = "150px";
+    menu.style.left = "38vw";
+  }
+};
+
+menuButton.addEventListener("click", handleMenuButtonClick);
